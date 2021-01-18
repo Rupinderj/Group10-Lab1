@@ -16,5 +16,31 @@ function outputCartRow(file,title,quantity,price,total)
 
 
 };
-
+var subTotal=function outputSubtotal(quantity,price)
+{
+    var subtotals=0;
+    for ( var i=0;i<price.length;i++)
+    {
+        var totals= quantity[i]* price[i]
+        var totals=quantity[i]*price[i];
+    }
+    return subtotals;
+    };
+    var tax = function calculateTax(subTotal){
+        return subtotal*0.1;
+    };
+}
+var shipping=function calculateShipping(subTotal)
+{
+    if(subTotal<1000)
+    {
+        return40;
+    }else{
+        return 0;
+    }
+};
+var grandTotal=function calculateGrandTotal(subTotal,tax,shipping)
+{
+    return subtotal+tax+shipping
+};
         
