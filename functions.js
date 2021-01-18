@@ -1,8 +1,7 @@
 /* define functions here */
-
-var calculateTotal = function(quantity, price)
+function calculatetotal(quantity,price)
 {
-    return quantity * price;
+    return price*quantity;
 };
 
         
